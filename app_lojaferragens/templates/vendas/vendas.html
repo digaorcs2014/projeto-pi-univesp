@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Vendas</title>
+</head>
+<body>
+    <h1>Cadastro de Vendas</h1>
+    <form action="/cadastrar_venda" method="POST">
+        <label for="id_cliente">ID do Cliente:</label><br>
+        <input type="text" id="id_cliente" name="id_cliente"><br>
+        <label for="data_venda">Data da Venda:</label><br>
+        <input type="date" id="data_venda" name="data_venda"><br>
+        <label for="tipo_venda">Tipo de Venda:</label><br>
+        <input type="text" id="tipo_venda" name="tipo_venda"><br>
+        <label for="valor_total">Valor Total:</label><br>
+        <input type="text" id="valor_total" name="valor_total"><br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>

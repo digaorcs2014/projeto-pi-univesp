@@ -1,0 +1,17 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+# Backup files # 
+*.bak 
+
+#PROJECT
+app_lojaferragens/__pycache__
+app_lojaferragens\__pycache__
+app_lojaferragens\migrations\__pycache__
+app_lojaferragens/migrations/__pycache__
+.vscode/settings.json

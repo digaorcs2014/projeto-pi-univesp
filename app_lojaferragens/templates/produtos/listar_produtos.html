@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>Lista de Produtos</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-hover caption-top ">
+                    <caption>Lista de Produtos</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Preço Venda</th>
+                            <th scope="col">Custo</th>
+                            <th scope="col">Imagem</th>
+                            <th scope="col">Manual Instrução</th>
+                            <th scope="col">Classificação</th>
+                            <th scope="col">Fornecedor</th>
+                            <th scope="col">Categoriaa</th>
+                            <th scope="col">Sub Categoria</th>
+                            <th scope="col">Excluir</th>
+                            <th scope="col">Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {%for produto in  produtos %}
+                        <tr>
+                            <th scope="row">{{produto.id}}</th>
+                            <td>{{produto.nome}}</td>
+                            <td>{{produto.descricao}}</td>
+                            <td>{{produto.preco_venda}}</td>
+                            <td>{{produto.custo}}</td>
+                            <td>{{produto.imagem}}</td>
+                            <td>{{produto.manual_instrucao}}</td>
+                            <td>{{produto.classificacao}}</td>
+                            <td>{{produto.fornecedor.nome}}</td>
+                            <td>{{produto.categoria.nome}}</td>
+                            <td>{{produto.sub_categoria.nome}}</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm">EXCLUIR</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-sm">EDITAR</button>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        
+        </div>
+    </body>
+</html>

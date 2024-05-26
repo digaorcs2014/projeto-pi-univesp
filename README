@@ -1,0 +1,8 @@
+### Após a criação dos arquivos de migração é necessário executar o comando:
+    python manage.py migrate app_lojaferragens
+
+### Para executar o projeto, execute o comando:
+    python manage.py runserver
+
+### Para listar os comandos disponiveis, execute:
+    python manage.py --help   

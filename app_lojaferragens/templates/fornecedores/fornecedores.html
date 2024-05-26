@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Fornecedores</title>
+</head>
+<body>
+    <h1>Cadastro de Fornecedores</h1>
+    <form action="/cadastrar_fornecedor" method="POST">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="cnpjcpf">CNPJ/CPF:</label><br>
+        <input type="text" id="cnpjcpf" name="cnpjcpf"><br>
+        <label for="contato">Contato:</label><br>
+        <input type="text" id="contato" name="contato"><br>
+        <label for="endereco">Endereço:</label><br>
+        <input type="text" id="endereco" name="endereco"><br>
+        <label for="classificacao_preco">Classificação Preço:</label><br>
+        <input type="text" id="classificacao_preco" name="classificacao_preco"><br>
+        <label for="classificacao_tempo">Classificação Tempo:</label><br>
+        <input type="text" id="classificacao_tempo" name="classificacao_tempo"><br>
+        <label for="classificacao_qualidade">Classificação Qualidade:</label><br>
+        <input type="text" id="classificacao_qualidade" name="classificacao_qualidade"><br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
